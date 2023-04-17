@@ -22,8 +22,8 @@ fetch(url).then((response) => {
     console.log(data.current.temp_c);
     
     const html = `<div id='card'>
-                    <h2>${data.location.name}</h2>
-                    <p>${data.current.temp_c}</p>
+                    <h2> город - ${data.location.name}</h2>
+                    <p id='p'>температура - ${data.current.temp_c}</p>
                   </div>
     
     `
